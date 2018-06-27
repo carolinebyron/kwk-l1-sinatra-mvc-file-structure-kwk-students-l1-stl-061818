@@ -1,11 +1,20 @@
-class ApplicationController < Sinatra::Base
+uclass ApplicationController < Sinatra::Base
 
   configure do
   	set :views, "app/views"
   	set :public_dir, "public"
   end
 
-  get "/" do
-  	erb :index
-  end
-end
+
+ get "/get_name" do
+   
+   first_dog = Dog.new("rudolph", "mastiff", 2)
+   first_dog.get_name
+   
+ end
+ end
+ 
+ 
+ 
+ 
+ 
