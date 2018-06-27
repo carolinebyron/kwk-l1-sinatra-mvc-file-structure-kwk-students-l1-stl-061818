@@ -9,7 +9,7 @@ require './app/models/model'
  
 
 get '/' do
-  return erb :index
+ erb :index
 end
 
 post '/' do
