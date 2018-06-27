@@ -8,14 +8,19 @@ require './app/models/model'
   end
  
 
+get '/' do
+  return erb :index
+end
 
- get "/get_name" do
+post '/' do
+  @the_fortune=get_fortune
+  @the_user=params[:user]
+  return erb :results
+end
+end
    
-   first_dog = Dog.new("rudolph", "mastiff", 2)
-   first_dog.get_name
-   
- end
- end
+
+
  
  
  
