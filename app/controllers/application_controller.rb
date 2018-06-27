@@ -5,7 +5,7 @@ require './app/models/model'
   	set :views, "app/views"
   	set :public_dir, "public"
   end
-  
+  class ApplicationController < Sinatra::Base
 
 
  get "/get_name" do
