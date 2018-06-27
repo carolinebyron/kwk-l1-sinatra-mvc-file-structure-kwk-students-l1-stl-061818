@@ -1,11 +1,12 @@
 require './config/enviroment'
 require './app/models/model'
 
+ class ApplicationController < Sinatra::Base
  configure do
   	set :views, "app/views"
   	set :public_dir, "public"
   end
-  class ApplicationController < Sinatra::Base
+ 
 
 
  get "/get_name" do
