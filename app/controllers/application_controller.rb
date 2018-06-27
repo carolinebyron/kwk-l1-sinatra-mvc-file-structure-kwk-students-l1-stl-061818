@@ -1,4 +1,4 @@
-require './config/enviroment'
+require './config/environment'
 require './app/models/model'
 
  class ApplicationController < Sinatra::Base
@@ -17,6 +17,7 @@ post '/' do
   @the_user=params[:user]
   return erb :results
 end
+
 end
    
 
